@@ -11,11 +11,11 @@ class Train extends Model
 
     public function getIconOnTime()
     {
-        return $this->is_on_time ? '<i class="fa-solid fa-circle-check"></i>' : '<i class="fa-solid fa-circle-xmark"></i>';
+        return $this->is_on_time ? '<i class="fa-solid fa-circle-check text-success"></i>' : '<i class="fa-solid fa-circle-xmark text-danger"></i>';
     }
 
     public function getIconIsCanceled()
     {
-        return $this->canceled ? '<i class="fa-solid fa-circle-check"></i>' : '<i class="fa-solid fa-circle-xmark"></i>';
+        return $this->canceled ? '<i class="fa-solid fa-circle-check text-success"></i>' : '<i class="fa-solid fa-circle-xmark text-danger"></i>';
     }
 }

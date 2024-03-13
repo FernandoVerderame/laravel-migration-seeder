@@ -35,8 +35,8 @@
             <td>{{ $train->arrival_time }}</td>
             <td>{{ $train->train_code }}</td>
             <td>{{ $train->carriage_number }}</td>
-            <td>{{ $train->getIconOnTime() }}</td>
-            <td>{{ $train->getIconIsCanceled() }}</td>
+            <td>{!! $train->getIconOnTime() !!}</td>
+            <td>{!! $train->getIconIsCanceled() !!}</td>
           </tr>
         @empty
           There are't any trains.
